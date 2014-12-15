@@ -1,0 +1,15 @@
+{
+    "name": "architect-demo",
+    "description": "plugin system experiment",
+    "version": "0.0.0",
+    "dependencies": {
+        "edge": "~0.9.3",
+        "architect": "~0.1.0",
+        "architect-http": "~0.0.1",
+        "architect-http-static": "~0.0.1",
+        "stack": "~0.1.0",
+        "creationix": "~0.3.1"
+    },
+    "devDependencies": {},
+    "optionalDependencies": {}
+}
