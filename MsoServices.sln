@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.EdgeJs.SmartQuant", "Ms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.EdgeJs.Dummy", "Mso.EdgeJs.Dummy\Mso.EdgeJs.Dummy.csproj", "{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR", "Mso.SignalR\Mso.SignalR.csproj", "{AAF82BFE-45CC-46C5-9690-0A0339970695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.SharpClient", "Mso.SignalR.SharpClient\Mso.SignalR.SharpClient.csproj", "{86B206A2-D99D-4F55-999D-3B601AF9ADCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.Server", "Mso.SignalR.Server\Mso.SignalR.Server.csproj", "{63CB3136-32B8-4548-B1F2-3A11ADC9602E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +23,22 @@ Global
 		{0573FA14-F0A1-4562-8577-976A64E40EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0573FA14-F0A1-4562-8577-976A64E40EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0573FA14-F0A1-4562-8577-976A64E40EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B206A2-D99D-4F55-999D-3B601AF9ADCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B206A2-D99D-4F55-999D-3B601AF9ADCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B206A2-D99D-4F55-999D-3B601AF9ADCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B206A2-D99D-4F55-999D-3B601AF9ADCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AD5F3A8C-B1C6-4AB5-AEAE-5DB855BB2CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AD5F3A8C-B1C6-4AB5-AEAE-5DB855BB2CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD5F3A8C-B1C6-4AB5-AEAE-5DB855BB2CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -28,5 +46,48 @@ Global
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Mso.EdgeJs\Mso.EdgeJs.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.TextStylePolicy = $2
+		$2.EolMarker = Unix
+		$2.inheritsSet = VisualStudio
+		$2.inheritsScope = text/plain
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.IndentSwitchBody = True
+		$3.IndentBlocksInsideExpressions = True
+		$3.AnonymousMethodBraceStyle = NextLine
+		$3.PropertyBraceStyle = NextLine
+		$3.PropertyGetBraceStyle = NextLine
+		$3.PropertySetBraceStyle = NextLine
+		$3.EventBraceStyle = NextLine
+		$3.EventAddBraceStyle = NextLine
+		$3.EventRemoveBraceStyle = NextLine
+		$3.StatementBraceStyle = NextLine
+		$3.ElseNewLinePlacement = NewLine
+		$3.CatchNewLinePlacement = NewLine
+		$3.FinallyNewLinePlacement = NewLine
+		$3.WhileNewLinePlacement = DoNotCare
+		$3.ArrayInitializerWrapping = DoNotChange
+		$3.ArrayInitializerBraceStyle = NextLine
+		$3.BeforeMethodDeclarationParentheses = False
+		$3.BeforeMethodCallParentheses = False
+		$3.BeforeConstructorDeclarationParentheses = False
+		$3.NewLineBeforeConstructorInitializerColon = NewLine
+		$3.NewLineAfterConstructorInitializerColon = SameLine
+		$3.BeforeDelegateDeclarationParentheses = False
+		$3.NewParentheses = False
+		$3.SpacesBeforeBrackets = False
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/x-csharp
+		$3.scope = text/x-csharp
+		$0.TextStylePolicy = $4
+		$4.FileWidth = 120
+		$4.EolMarker = Unix
+		$4.inheritsSet = VisualStudio
+		$4.inheritsScope = text/plain
+		$4.scope = text/plain
 	EndGlobalSection
 EndGlobal
