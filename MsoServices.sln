@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.SharpClient", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.Server", "Mso.SignalR.Server\Mso.SignalR.Server.csproj", "{63CB3136-32B8-4548-B1F2-3A11ADC9602E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.EdgeJs.MonoDevelop", "Mso.EdgeJs.MonoDevelop\Mso.EdgeJs.MonoDevelop.csproj", "{1149179A-C36F-413E-BB24-94417F700176}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{0573FA14-F0A1-4562-8577-976A64E40EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0573FA14-F0A1-4562-8577-976A64E40EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0573FA14-F0A1-4562-8577-976A64E40EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1149179A-C36F-413E-BB24-94417F700176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1149179A-C36F-413E-BB24-94417F700176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1149179A-C36F-413E-BB24-94417F700176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1149179A-C36F-413E-BB24-94417F700176}.Release|Any CPU.Build.0 = Release|Any CPU
 		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Release|Any CPU.ActiveCfg = Release|Any CPU

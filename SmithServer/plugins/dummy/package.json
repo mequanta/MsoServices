@@ -1,0 +1,10 @@
+{
+    "name": "dummy",
+    "version": "0.0.1",
+    "main": "dummy.js",
+    "private": true,
+
+    "plugin": {
+        "consumes": ["http", "auth"]
+    }
+}

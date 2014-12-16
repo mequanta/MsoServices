@@ -1,0 +1,16 @@
+<html>
+<head>
+<script src="node_modules/engine.io-client/engine.io.js"></script>
+<script>
+  var socket = new eio.Socket('ws://localhost:3000/');
+  socket.binaryType = 'blob';
+  socket.on('open', function () {
+    socket.send("hello!");
+    socket.on('message', function(text){
+      console.log(text);
+    });
+    socket.on('close', function(){ });
+  });
+</script>
+</head>
+</html>
