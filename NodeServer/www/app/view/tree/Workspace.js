@@ -11,6 +11,21 @@ Ext.define('Mso.view.tree.Workspace', {
                 }
             })
         });
-        this.callParent();
+
+     
+     var contextMenu = new Ext.menu.Menu({
+  items: [{
+    text: 'Edit',
+    iconCls: 'edit',
+    handler: function() {}
+  }]
+});
+
+      this.on('itemcontextmenu', function(view, record, item, index, event){
+        contextMenu.showAt(event.getXY());
+        event.stopEvent();
+       },this);
+
+       this.callParent();
     }
 });
