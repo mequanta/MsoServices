@@ -9,10 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.EdgeJs.Dummy", "Mso.Edg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR", "Mso.SignalR\Mso.SignalR.csproj", "{AAF82BFE-45CC-46C5-9690-0A0339970695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.SharpClient", "Mso.SignalR.SharpClient\Mso.SignalR.SharpClient.csproj", "{86B206A2-D99D-4F55-999D-3B601AF9ADCC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.Server", "Mso.SignalR.Server\Mso.SignalR.Server.csproj", "{63CB3136-32B8-4548-B1F2-3A11ADC9602E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.EdgeJs.MonoDevelop", "Mso.EdgeJs.MonoDevelop\Mso.EdgeJs.MonoDevelop.csproj", "{1149179A-C36F-413E-BB24-94417F700176}"
 EndProject
 Global
@@ -29,18 +25,10 @@ Global
 		{1149179A-C36F-413E-BB24-94417F700176}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1149179A-C36F-413E-BB24-94417F700176}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1149179A-C36F-413E-BB24-94417F700176}.Release|Any CPU.Build.0 = Release|Any CPU
-		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63CB3136-32B8-4548-B1F2-3A11ADC9602E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86B206A2-D99D-4F55-999D-3B601AF9ADCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86B206A2-D99D-4F55-999D-3B601AF9ADCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86B206A2-D99D-4F55-999D-3B601AF9ADCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86B206A2-D99D-4F55-999D-3B601AF9ADCC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Release|Any CPU.ActiveCfg = Release|Any CPU

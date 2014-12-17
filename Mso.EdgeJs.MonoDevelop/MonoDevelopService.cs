@@ -1,11 +1,20 @@
 ﻿using System;
 using System.Threading.Tasks;
+using MonoDevelop.Core;
+using MonoDevelop.Projects;
 
 namespace Mso.EdgeJs
 {
     public class MonoDevelopService
     {
         private string basePath;
+
+        static MonoDevelopService()
+        {
+            Runtime.Initialize(true);
+            foreach (var binding in LanguageBindingService.LanguageBindings)
+                LoggingService.LogInfo("Loaded Language binding: {0}", binding.Language);
+        }
 
         public MonoDevelopService(string basePath)
         {

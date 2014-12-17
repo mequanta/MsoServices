@@ -1,0 +1,11 @@
+{
+    "name": "engine.io",
+    "version": "0.0.1",
+    "main": "engine.io.js",
+    "private": true,
+
+    "plugin": {
+        "consumes": ["http"],
+        "provides": ["eio"]
+    }
+}
