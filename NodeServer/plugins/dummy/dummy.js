@@ -13,6 +13,16 @@ module.exports = function setup(options, imports, register) {
         });
     }
 
+	var server = imports.eio.server;
+	server.on('connection', function(socket) {
+      console.log("client connected!");
+      socket.on('message', function(data) {
+      });
+      
+	  socket.on('close', function(){
+        console.log("client disconnected!")
+      });
+    });
     http.get("/info", handler, register);
 /*
     register(null, {
