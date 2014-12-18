@@ -13,7 +13,7 @@
     "highstock-release": "~2.0.4",
     "jquery": "~2.1.1",
     "mso-extjs": "https://github.com/mequanta/bower-extjs.git#~5.1.0",
-	"mso-extjs-theme-crisp": "https://github.com/mequanta/bower-extjs-theme-crisp.git#~5.1.0",
+    "mso-extjs-theme-crisp": "https://github.com/mequanta/bower-extjs-theme-crisp.git#~5.1.0",
     "ace-builds": "~1.1.8",
     "codemirror": "~4.8.0",
     "engine.io": "~1.4.3"

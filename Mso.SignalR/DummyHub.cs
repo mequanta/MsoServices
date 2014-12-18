@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNet.SignalR;
 using System.Threading.Tasks;
+using Microsoft.AspNet.SignalR.Hubs;
 
 namespace Mso.SignalR
 {
@@ -19,4 +20,16 @@ namespace Mso.SignalR
             Clients.All.addMessage(name, message);
         }
     }
+
+    [HubName("CustomHub")]
+    public class MyHub : Hub {
+        public string Send(string message) {
+            return message;
+        }
+
+        public void DoSomething(string param) {
+            Clients.Caller.addMessage(param);
+        }
+    }
+
 }

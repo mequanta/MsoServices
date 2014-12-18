@@ -1,6 +1,6 @@
-﻿var owin = require('connect-owin'),
-    connect = require('connect'),
-    express = require('express');
+﻿var owin = require('connect-owin')
+var connect = require('connect')
+var express = require('express')
 
 var app = express();
 app.use(connect.logger('dev'));
