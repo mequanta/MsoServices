@@ -3,8 +3,6 @@
   "version": "0.0.0",
   "dependencies": {
     "architect": "~0.1.0",
-    "architect-http": "~0.0.1",
-    "architect-http-static": "~0.0.1",
     "creationix": "~0.3.1",
     "edge": "~0.9.3",
     "engine.io": "^1.4.3",
