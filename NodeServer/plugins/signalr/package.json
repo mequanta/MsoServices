@@ -1,0 +1,11 @@
+{
+    "name": "signalr",
+    "version": "0.0.1",
+    "main": "signalr.js",
+    "private": true,
+
+    "plugin": {
+        "consumes": ["http"],
+        "provides": ["signalr"]
+    }
+}

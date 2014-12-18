@@ -60,73 +60,73 @@
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory.CSharp.Refactoring">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\ICSharpCode.NRefactory.CSharp.Refactoring.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\ICSharpCode.NRefactory.CSharp.Refactoring.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Addins">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\Mono.Addins.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\Mono.Addins.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Addins.Setup">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\Mono.Addins.Setup.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\Mono.Addins.Setup.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Debugging">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\Mono.Debugging.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\Mono.Debugging.dll</HintPath>
     </Reference>
     <Reference Include="Mono.TextEditor">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\Mono.TextEditor.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\Mono.TextEditor.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Core">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.Core.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.Core.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.CSharpBinding.AspNet">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.CSharpBinding.AspNet.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.CSharpBinding.AspNet.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.CSharpBinding.Autotools">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.CSharpBinding.Autotools.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.CSharpBinding.Autotools.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.CSharpBinding">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.CSharpBinding.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.CSharpBinding.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Debugger">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.Debugger.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.Debugger.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.DesignerSupport">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.DesignerSupport.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.DesignerSupport.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Ide">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.Ide.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.Ide.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.NUnit">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.NUnit.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.NUnit.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Projects.Formats.MSBuild">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.Projects.Formats.MSBuild.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.Projects.Formats.MSBuild.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Refactoring">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.Refactoring.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.Refactoring.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.SourceEditor2">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\MonoDevelop.SourceEditor2.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\MonoDevelop.SourceEditor2.dll</HintPath>
     </Reference>
     <Reference Include="nunit.core">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\nunit.core.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\nunit.core.dll</HintPath>
     </Reference>
     <Reference Include="nunit.core.interfaces">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\nunit.core.interfaces.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\nunit.core.interfaces.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\nunit.framework.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="nunit.util">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\nunit.util.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\nunit.util.dll</HintPath>
     </Reference>
     <Reference Include="NUnitRunner">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\NUnitRunner.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\NUnitRunner.dll</HintPath>
     </Reference>
     <Reference Include="Xwt">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\Xwt.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\Xwt.dll</HintPath>
     </Reference>
     <Reference Include="Xwt.Gtk">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.1\lib\net45\Xwt.Gtk.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.2\lib\net45\Xwt.Gtk.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
