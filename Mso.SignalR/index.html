@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <title>Hello World! with SignalR</title>
-    <script src="lib/jquery/jquery.js"></script>
-    <script src="lib/signalr/jquery.signalR.js"></script>
-    <script src="/signalr/hubs" type="text/javascript"></script>
+    <script src="www/lib/jquery/jquery.js"></script>
+    <script src="www/lib/signalr/jquery.signalR.js"></script>
     <script src="/signalr/hubs" type="text/javascript"></script>
     <script type="text/javascript">
-
         $(document).ready(function () {
-
- 
-
             //defining hub which will have client and server side methods defined.
 
             var hub = $.connection.helloWorld;
@@ -48,15 +42,9 @@
         });
 
     </script>
-
 </head>
-
 <body>
-
     <div id="AddText"></div>
-
     <input type="button" id="SubmitButton" value="Say Hello" />
-
 </body>
-
 </html>

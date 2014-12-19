@@ -1,7 +1,8 @@
 ﻿{
   "dependencies": {
     "connect-owin": "~0.3.0",
-    "express": "~4.10.0"
+    "express": "~4.10.6",
+	"connect": "~3.3.3"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
