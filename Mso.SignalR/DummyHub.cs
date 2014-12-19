@@ -32,4 +32,11 @@ namespace Mso.SignalR
         }
     }
 
+    public class HelloWorld : Hub 
+    {
+        public void Hello()
+        {
+            Clients.All.hello();
+        }        
+    }
 }

@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <title>Hello World! with SignalR</title>
-    <script src="lib/jquery/jquery.js"></script>
-    <script src="lib/signalr/jquery.signalR.js"></script>
-    <script src="/signalr/hubs" type="text/javascript"></script>
+    <title>Hello NodeJs with SignalR</title>
+    <script src="www/lib/jquery/jquery.js"></script>
+    <script src="www/lib/signalr/jquery.signalR.js"></script>
     <script src="/signalr/hubs" type="text/javascript"></script>
     <script type="text/javascript">
 
@@ -25,7 +23,7 @@
 
             hub.client.hello = function () {
 
-                $('#AddText').append('Hello World!<br />');
+                $('#AddText').append('Hello NodeJs! <br />');
 
             }
 

@@ -3,7 +3,7 @@
 
 **/node_modules/
 **/bower_components/
-NodeServer/www/lib/
+**/www/lib/
 # User-specific files
 *.suo
 *.user
