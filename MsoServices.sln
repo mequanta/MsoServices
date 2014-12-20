@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.EdgeJs", "Mso.EdgeJs\Mso.EdgeJs.csproj", "{0573FA14-F0A1-4562-8577-976A64E40EDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.EdgeJs.SmartQuant", "Mso.EdgeJs.SmartQuant\Mso.EdgeJs.SmartQuant.csproj", "{AD5F3A8C-B1C6-4AB5-AEAE-5DB855BB2CBA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.EdgeJs.Dummy", "Mso.EdgeJs.Dummy\Mso.EdgeJs.Dummy.csproj", "{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR", "Mso.SignalR\Mso.SignalR.csproj", "{AAF82BFE-45CC-46C5-9690-0A0339970695}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.EdgeJs.MonoDevelop", "Mso.EdgeJs.MonoDevelop\Mso.EdgeJs.MonoDevelop.csproj", "{1149179A-C36F-413E-BB24-94417F700176}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +17,6 @@ Global
 		{0573FA14-F0A1-4562-8577-976A64E40EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0573FA14-F0A1-4562-8577-976A64E40EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0573FA14-F0A1-4562-8577-976A64E40EDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1149179A-C36F-413E-BB24-94417F700176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1149179A-C36F-413E-BB24-94417F700176}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1149179A-C36F-413E-BB24-94417F700176}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1149179A-C36F-413E-BB24-94417F700176}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,10 +25,6 @@ Global
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD5F3A8C-B1C6-4AB5-AEAE-5DB855BB2CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD5F3A8C-B1C6-4AB5-AEAE-5DB855BB2CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD5F3A8C-B1C6-4AB5-AEAE-5DB855BB2CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD5F3A8C-B1C6-4AB5-AEAE-5DB855BB2CBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Mso.EdgeJs\Mso.EdgeJs.csproj

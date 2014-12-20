@@ -55,9 +55,5 @@
       <Project>{6B4D6A58-4FF2-4F95-93E9-17CF9D185C19}</Project>
       <Name>Mso.EdgeJs.Dummy</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Mso.EdgeJs.SmartQuant\Mso.EdgeJs.SmartQuant.csproj">
-      <Project>{AD5F3A8C-B1C6-4AB5-AEAE-5DB855BB2CBA}</Project>
-      <Name>Mso.EdgeJs.SmartQuant</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>
