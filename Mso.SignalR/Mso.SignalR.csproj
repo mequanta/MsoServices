@@ -151,10 +151,12 @@
     <Compile Include="IService.cs" />
     <Compile Include="SmartQuantHub.cs" />
     <Compile Include="MonoDevelopHub.cs" />
+    <Compile Include="Data\Instrument.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Properties\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

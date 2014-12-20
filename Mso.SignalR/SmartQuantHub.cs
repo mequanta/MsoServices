@@ -2,17 +2,29 @@
 using Microsoft.AspNet.SignalR;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR.Hubs;
+using System.Collections.Generic;
+using Mso.SignalR.Data;
 
 namespace Mso.SignalR.Hubs
 {
     public class SmartQuantHub : Hub<ISmartQuantService>
     {
-        public async Task<string> GetProviderListAsync()
+        public async Task<IEnumerable<Provider>> GetProviders()
         {
             throw new NotImplementedException();
         }
 
-        public async Task<string> GetProviderAsync(string providerName)
+        public async Task<IEnumerable<Instrument>> GetInstruments()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<Provider> GetProvider(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<Instrument> GetInstrument(string name)
         {
             throw new NotImplementedException();
         }
@@ -37,32 +49,27 @@ namespace Mso.SignalR.Hubs
             throw new NotImplementedException();
         }
 
-        public async void GetInstrumentListAsync()
+        public async void AddInstrument(Instrument instrument)
         {
             throw new NotImplementedException();
         }
 
-        public async void AddInstrumentsAsync(string jsonText)
+        public async void DeleteInstrument(Instrument instrument)
         {
             throw new NotImplementedException();
         }
 
-        public async void DeleteInstrumentsAsync(string[] names)
+        public async void UpdateInstrument(Instrument instrument, string jsonProperties)
         {
             throw new NotImplementedException();
         }
 
-        public async void UpdateInstrumentAsync(string names, string jsonProperties)
+        public async Task<IEnumerable<DataSeries>> GetDataSeriesList()
         {
             throw new NotImplementedException();
         }
 
-        public async Task<string> GetDataSeriesListAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<string> GetStrategyListAsync()
+        public async Task<IEnumerable<Strategy>> GetStrategies()
         {
             throw new NotImplementedException();
         }

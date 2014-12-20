@@ -37,6 +37,6 @@ namespace Mso.SignalR
         public void Hello()
         {
             Clients.All.hello();
-        }        
+        }
     }
 }
