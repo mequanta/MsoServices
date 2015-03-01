@@ -91,9 +91,41 @@ namespace LoadingDll
             return solution;
         }
 
+        static void OnSolutionAdded(Solution solution)
+        {
+            solution.NameChanged += (sender, e) =>
+            {
+            };
+            solution.StartupItemChanged+= (sender, e) =>
+            {
+            };
+            solution.RootFolder.ItemAdded += (sender, e) =>
+            {
+            };
+            solution.RootFolder.ItemRemoved+= (sender, e) =>
+            {
+            };
+            solution.RootFolder.SolutionItemFileAdded+= (sender, e) =>
+            {
+            };
+            solution.RootFolder.SolutionItemFileRemoved+= (sender, e) =>
+            {
+            };
+        }
+
         public static void AddProjectToSolution(Solution solution, Project project)
         {
             solution.RootFolder.AddItem(project, true);
+        }
+        public static void AddFolderToSolution(Solution solution)
+        {
+            var ce = new SolutionFolder();
+            ce.Name = "New Folder";
+            solution.RootFolder.Items.Add(ce);
+        }
+        public static void ReloadSolution(Solution solution)
+        {
+            solution.ParentWorkspace.ReloadItem(new NullProgressMonitor(), solution);
         }
 
         public static Project createProject(string fileName)
@@ -121,6 +153,14 @@ namespace LoadingDll
             FileService.RenameFile(oldFile, newFile);
             item.FileName = newFile;
             item.Save(new NullProgressMonitor());
+        }
+
+        static void DeleteSolution(Solution solution)
+        {
+        }
+
+        static void AddFilesToProject(Project project, string[] files, FilePath targetDirectory)
+        {
         }
 	}
 }
