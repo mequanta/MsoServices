@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{E8407158-0DCA-4DD5-AF7A-D0D22B6B0A6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{8F236C80-E7B3-4883-AADB-C9D4F021074E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBProject", "VBProject\VBProject.vbproj", "{BD31A8D9-3923-4E4C-AF4A-DFB2A1BB05CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpProject", "CSharpProject\CSharpProject.csproj", "{D8ADE1E4-23AE-40B9-9937-447E6A960718}"
+EndProject
+Project("{B4EC64DC-6D44-11DD-AAB0-C9A155D89593}") = "ILProject", "ILProject\ILProject.ilproj", "{C238199F-E2B0-4420-85AB-21C9B8937155}"
+EndProject
+Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "FSharpProject", "FSharpProject\FSharpProject.fsproj", "{BE099EC8-BAE5-4636-AB2F-859361AF69CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F236C80-E7B3-4883-AADB-C9D4F021074E}.Debug|x86.ActiveCfg = Debug|x86
+		{8F236C80-E7B3-4883-AADB-C9D4F021074E}.Debug|x86.Build.0 = Debug|x86
+		{8F236C80-E7B3-4883-AADB-C9D4F021074E}.Release|x86.ActiveCfg = Release|x86
+		{8F236C80-E7B3-4883-AADB-C9D4F021074E}.Release|x86.Build.0 = Release|x86
+		{BD31A8D9-3923-4E4C-AF4A-DFB2A1BB05CB}.Debug|x86.ActiveCfg = Debug|x86
+		{BD31A8D9-3923-4E4C-AF4A-DFB2A1BB05CB}.Debug|x86.Build.0 = Debug|x86
+		{BD31A8D9-3923-4E4C-AF4A-DFB2A1BB05CB}.Release|x86.ActiveCfg = Release|x86
+		{BD31A8D9-3923-4E4C-AF4A-DFB2A1BB05CB}.Release|x86.Build.0 = Release|x86
+		{BE099EC8-BAE5-4636-AB2F-859361AF69CB}.Debug|x86.ActiveCfg = Debug|x86
+		{BE099EC8-BAE5-4636-AB2F-859361AF69CB}.Debug|x86.Build.0 = Debug|x86
+		{BE099EC8-BAE5-4636-AB2F-859361AF69CB}.Release|x86.ActiveCfg = Release|x86
+		{BE099EC8-BAE5-4636-AB2F-859361AF69CB}.Release|x86.Build.0 = Release|x86
+		{C238199F-E2B0-4420-85AB-21C9B8937155}.Debug|x86.ActiveCfg = Debug|x86
+		{C238199F-E2B0-4420-85AB-21C9B8937155}.Debug|x86.Build.0 = Debug|x86
+		{C238199F-E2B0-4420-85AB-21C9B8937155}.Release|x86.ActiveCfg = Release|x86
+		{C238199F-E2B0-4420-85AB-21C9B8937155}.Release|x86.Build.0 = Release|x86
+		{D8ADE1E4-23AE-40B9-9937-447E6A960718}.Debug|x86.ActiveCfg = Debug|x86
+		{D8ADE1E4-23AE-40B9-9937-447E6A960718}.Debug|x86.Build.0 = Debug|x86
+		{D8ADE1E4-23AE-40B9-9937-447E6A960718}.Release|x86.ActiveCfg = Release|x86
+		{D8ADE1E4-23AE-40B9-9937-447E6A960718}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F236C80-E7B3-4883-AADB-C9D4F021074E} = {E8407158-0DCA-4DD5-AF7A-D0D22B6B0A6F}
+		{BD31A8D9-3923-4E4C-AF4A-DFB2A1BB05CB} = {E8407158-0DCA-4DD5-AF7A-D0D22B6B0A6F}
+	EndGlobalSection
+EndGlobal

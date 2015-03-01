@@ -1,56 +1,44 @@
-Ext.Loader.setPath('Ext.ux', 'ext/ux');
-Ext.require([
-  'Ext.ux.form.field.Ace',
-  'Ext.ux.form.field.CodeMirror',
-  'Ext.ux.HighStock' 
-]);
+require.config({
+    baseUrl:'lib',
+    paths: {
+        "jquery": 'jquery/jquery',
+        "jquery.signalR": 'signalr/jquery.signalR',
+        "highstock": "highstock-release/highstock",
+        "codemirror": "codemirror/codemirror",
+        "extjs": "mso-extjs/ext-all",
+        "extjs-theme-crisp": "mso-extjs-theme-crisp/ext-theme-crisp",
+        "ace": "ace-builds/src-min/ace",
+        "mso": "mso"
+    },
+    waitSeconds: 30
+});
 
-Ext.application({
-  extend: 'Ext.app.Application',
-  name: "Mso",
-  autoCreateViewport: 'Mso.view.main.Main',
-    
-  launch: function() {
-    var socket = new eio.Socket('ws://localhost/');
-    socket.on('open', function() {
-      console.log("eio opened!");
-      socket.send("hi");
-      socket.on('message', function(data) {
-      
-      });
-      socket.on('close', function(){});
+require(["jquery"], function() {
+    require(["jquery.signalR"], function() {
+        require(["/signalr/hubs"], function() {
+        });
     });
+});
 
+require(["extjs", "ace"],function() {
+    require(["extjs-theme-crisp", "highstock"], function() {
+        Ext.Loader.setPath('Ext.ux', 'ext/ux');
+        Ext.require([
+            'Ext.ux.form.field.Ace',
+            'Ext.ux.form.field.CodeMirror',
+            'Ext.ux.HighStock'
+        ]);
 
+        Ext.application({
+            extend: 'Ext.app.Application',
+            name: "Mso",
+            autoCreateViewport: 'Mso.view.main.Main',
 
-            $.connection.hub.logging = true;
-
-            // Declare a proxy to reference the hub.
-            var dummy = $.connection.dummyHub;
-
-            // Create a function that the hub can call to broadcast messages.
-            dummy.client.addMessage = function (name, message) {
-                // Html encode display name and message.
-                var encodedName = $('<div />').text(name).html();
-                var encodedMsg = $('<div />').text(message).html();
-                // Add the message to the page.
-                $('#discussion').append('<li><strong>' + encodedName
-                    + '</strong>:&nbsp;&nbsp;' + encodedMsg + '</li>');
-            };
-            // Get the user name and store it to prepend to messages.
-            $('#displayname').val(prompt('Enter your name:', ''));
-            // Set initial focus to message input box.
-            $('#message').focus();
-            // Start the connection.
-            $.connection.hub.start().done(function () {
-                console.log('SignalR connected [ID=' + $.connection.hub.id + '; Transport = ' + $.connection.hub.transport.name + ']');
-                $('#sendmessage').click(function () {
-                    // Call the Send method on the hub.
-                    dummy.server.send($('#displayname').val(), $('#message').val());
-                    // Clear text box and reset focus for next comment.
-                    $('#message').val('').focus();
+            launch: function() {
+                Ext.onReady(function() {
+                    require(["mso.js"]);
                 });
-            });
-
-  }
+            }
+        });
+    });
 });

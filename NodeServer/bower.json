@@ -1,7 +1,7 @@
 {
   "name": "mso",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -9,14 +9,15 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.1",
-    "signalr": "~2.1.2",
+    "signalr": "~2.2.0",
     "highstock-release": "~2.0.4",
     "jquery": "~2.1.1",
     "mso-extjs": "https://github.com/mequanta/bower-extjs.git#~5.1.0",
     "mso-extjs-theme-crisp": "https://github.com/mequanta/bower-extjs-theme-crisp.git#~5.1.0",
     "ace-builds": "~1.1.8",
     "codemirror": "~4.8.0",
-    "engine.io": "~1.4.3"
+    "engine.io": "~1.5.1",
+    "requirejs": "~2.1.16"
   },
   "exportsOverride": {
     "bootstrap": {
