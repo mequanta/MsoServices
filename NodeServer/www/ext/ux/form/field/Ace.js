@@ -6,8 +6,11 @@ Ext.define("Ext.ux.form.field.Ace", {
     onRender: function () {
         var me = this;
         me.callParent(arguments);
-        me.editor = ace.edit(me.getEl().dom.id);
-        me.editor.setTheme("ace/theme/monokai");
-        me.editor.getSession().setMode("ace/mode/csharp");        
+
+        require(["ace/ace"], function(ace) {
+            me.editor = ace.edit(me.getEl().dom.id);
+            me.editor.setTheme("ace/theme/monokai");
+            me.editor.getSession().setMode("ace/mode/csharp"); 
+        });       
     }
 });

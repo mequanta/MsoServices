@@ -7,7 +7,8 @@ Ext.define('Mso.view.main.Main', {
         'Mso.store.Instruments',
         'Mso.view.tree.Workspace',
         'Mso.view.tree.Instrument',
-        'Ext.ux.menubar.Menubar'
+        'Ext.ux.menubar.Menubar',
+        'Ext.ux.AceTree'
     ],
 
     items: [
@@ -137,7 +138,10 @@ Ext.define('Mso.view.main.Main', {
             split: true,
             layout: 'accordion',
             items: [
-           //     Ext.create('Mso.view.tree.workspace'),
+                {
+                    xtype: "acetree",
+                    title: 'Solution',
+                },
                 {
                     xtype: 'workspace'
                 },

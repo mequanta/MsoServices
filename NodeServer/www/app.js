@@ -7,7 +7,8 @@ require.config({
         "codemirror": "codemirror/codemirror",
         "extjs": "mso-extjs/ext-all",
         "extjs-theme-crisp": "mso-extjs-theme-crisp/ext-theme-crisp",
-        "ace": "ace-builds/src-min/ace",
+        "ace": "ace/lib/ace",
+        "ace_tree": "ace_tree/lib/ace_tree",
         "mso": "mso"
     },
     waitSeconds: 30
@@ -20,7 +21,7 @@ require(["jquery"], function() {
     });
 });
 
-require(["extjs", "ace"],function() {
+require(["extjs", "ace/ace"],function() {
     require(["extjs-theme-crisp", "highstock"], function() {
         Ext.Loader.setPath('Ext.ux', 'ext/ux');
         Ext.require([
@@ -36,7 +37,8 @@ require(["extjs", "ace"],function() {
 
             launch: function() {
                 Ext.onReady(function() {
-                    require(["mso.js"]);
+                    //require(["ace_tree/tree"]);
+                    //require(["mso.js"]);
                 });
             }
         });

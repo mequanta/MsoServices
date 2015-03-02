@@ -8,6 +8,6 @@ module.exports = [{
     packagePath: "../node_modules/connect-architect/connect.static",
     prefix: "/"
 }, {
-    packagePath: "../plugins/main",
+    packagePath: "../plugins/server",
     dllPath: Path.join(__dirname, "../../Mso.SignalR/bin/Debug/Mso.Signal.dll")
 }];

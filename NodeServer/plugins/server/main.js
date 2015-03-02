@@ -4,6 +4,7 @@ define(function(require, exports, module) {
     return main;
 
     function main(options, imports, register) {
+        var Path = require("path");
         var connect = imports.connect;
         var api = require("frontdoor")();
         var owin = require("connect-owin");
@@ -20,8 +21,17 @@ define(function(require, exports, module) {
 
         var statics = imports["connect.static"];
         statics.addStatics([{
-            path: require("path").join(__dirname, "../../www"),
+            path: Path.join(__dirname, "../../www"),
             mount: "/"
         }]);
+
+        [
+            'solution'
+        ].forEach(function(name) {
+            statics.addStatics([{
+                path: __dirname + "/../../plugins/" + name,
+                mount: "/lib/" + name
+            }]);
+        });
     }
 });

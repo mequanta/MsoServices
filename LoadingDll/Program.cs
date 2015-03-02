@@ -6,6 +6,7 @@ using MonoDevelop.Projects;
 using SmartQuant;
 using System.IO;
 using System.Xml;
+using System.Reflection;
 
 namespace LoadingDll
 {
@@ -18,24 +19,26 @@ namespace LoadingDll
 			foreach (var binding in LanguageBindingService.LanguageBindings)
 				LoggingService.LogInfo ("Loaded Language Binding: {0}", binding.Language);
             Console.WriteLine("Hello, World");
+
+            var basePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "../../../SampleProjects");
+            Console.WriteLine(basePath);
             var service = Services.ProjectService;
-            var file = "/home/alex/SampleProjects/SampleProjects.sln";
+            var file = Path.Combine(basePath, "SampleProjects.sln");
             var solu = service.ReadWorkspaceItem(new NullProgressMonitor(), file);
-            var slnFile = "/home/alex/SampleProjects/SampleProjects.sln";
+            var slnFile = Path.Combine(basePath, "SampleProjects.sln");
             var solution = service.ReadWorkspaceItem(new NullProgressMonitor(), slnFile).GetAllSolutions().First();
             Console.WriteLine("{0} {1}", solution.Name, solution.GetType());
-           // Console.WriteLine(solution.Name);
             Console.WriteLine("dump");
             DumpSolution(solution);
-            var wsItem = service.ReadWorkspaceItem(new NullProgressMonitor(), "/home/alex/Test/Test.mdw");
-            Console.WriteLine("{0} {1}", wsItem.Name, wsItem.GetType());
-            DumpWorkspace(wsItem as Workspace);
-
-            var sol  = service.ReadWorkspaceItem(new NullProgressMonitor(), "/home/alex/Test/Sub2.sln").GetAllSolutions().First();
-            DumpSolution(sol);
-
-            var prj = Project.LoadProject("/home/alex/Test/TestProj.csproj", new NullProgressMonitor());
-            DumpProject(prj);
+//            var wsItem = service.ReadWorkspaceItem(new NullProgressMonitor(), "/home/alex/Test/Test.mdw");
+//            Console.WriteLine("{0} {1}", wsItem.Name, wsItem.GetType());
+//            DumpWorkspace(wsItem as Workspace);
+//
+//            var sol  = service.ReadWorkspaceItem(new NullProgressMonitor(), "/home/alex/Test/Sub2.sln").GetAllSolutions().First();
+//            DumpSolution(sol);
+//
+//            var prj = Project.LoadProject("/home/alex/Test/TestProj.csproj", new NullProgressMonitor());
+//            DumpProject(prj);
         }
 
         private static void LoadSmartQuant()
