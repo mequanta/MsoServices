@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "dependencies": {
     "amd-loader": "~0.0.5",
-    "architect": "git://github.com/c9/architect.git#567b7c0",
-    "connect-architect": "git://github.com/c9/connect-architect.git#88219df",
-    "frontdoor": "git://github.com/c9/frontdoor.git#c34e618",
+	"connect": "~2.12.0",
     "connect-owin": "~0.3.0",
     "engine.io": "~1.5.1",
-    "engine.io-client": "~1.5.1"
+    "engine.io-client": "~1.5.1",
+	"netutil": "~0.0.1",
+	"http-error": "~0.0.5"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

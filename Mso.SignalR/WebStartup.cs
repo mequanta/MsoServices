@@ -4,6 +4,7 @@ using Microsoft.AspNet.SignalR;
 using Microsoft.Owin.StaticFiles;
 using Microsoft.Owin;
 using Microsoft.Owin.FileSystems;
+using System.Collections.Generic;
 
 namespace Mso.SignalR
 {
@@ -11,6 +12,7 @@ namespace Mso.SignalR
     {
         public void Configuration(IAppBuilder app)
         {
+            app.Properties["host.AppName"] = "Mso";
             app.MapSignalR(new HubConfiguration()
             {
                 EnableJavaScriptProxies = true,

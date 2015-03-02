@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartQuant", "..\smartquant
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.Roslyn", "Mso.Roslyn\Mso.Roslyn.csproj", "{94A131BC-C5CE-434F-BDB9-A77389B6EC4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQDemo", "SQDemo\SQDemo.csproj", "{BD1E0468-2355-4671-AFCF-BE150FA9A091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,14 @@ Global
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Release|x86.ActiveCfg = Release|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Release|x86.Build.0 = Release|Any CPU
+		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Debug|x86.Build.0 = Debug|Any CPU
+		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
