@@ -11,17 +11,26 @@ require.config({
         "ace_tree": "ace_tree/lib/ace_tree",
         "mso": "mso"
     },
+    shim: {
+        'jquery.signalR': ['jquery'],
+        '/signalr/hubs': ['jquery.signalR'],
+        'ace_tree': ['ace'],
+    },
+    map: {
+        '*': {
+            'css': 'require-css/css'
+        }
+    },
     waitSeconds: 30
 });
 
-require(["jquery"], function() {
-    require(["jquery.signalR"], function() {
         require(["/signalr/hubs"], function() {
         });
-    });
+
+require(["css!solution/style"], function() {
 });
 
-require(["extjs", "ace/ace"],function() {
+require(["extjs", "ace/ace"], function() {
     require(["extjs-theme-crisp", "highstock"], function() {
         Ext.Loader.setPath('Ext.ux', 'ext/ux');
         Ext.require([

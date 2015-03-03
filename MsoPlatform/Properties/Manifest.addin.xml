@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ExtensionModel>
-	<Extension path = "/MonoDevelop/Core/WebCredentialProviders">
-		<Class class = "MsoPlatform.ProxyCredentialProvider" />
-	</Extension>
-</ExtensionModel>

@@ -54,12 +54,6 @@
     <Reference Include="Microsoft.Owin.Diagnostics">
       <HintPath>..\packages\Microsoft.Owin.Diagnostics.3.0.1\lib\net45\Microsoft.Owin.Diagnostics.dll</HintPath>
     </Reference>
-    <Reference Include="MonoDevelop.Core">
-      <HintPath>dlls\MonoDevelop.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="SmartQuant">
-      <HintPath>dlls\SmartQuant.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Startup.cs" />

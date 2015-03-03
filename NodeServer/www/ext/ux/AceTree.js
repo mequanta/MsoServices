@@ -6,10 +6,12 @@ Ext.define("Ext.ux.AceTree", {
     onRender: function () {
         var me = this;
         me.callParent(arguments);
-        var div = me.getEl().dom;
+        var div = me.body.dom;
         require(['ace_tree/tree', 'solution/DataProvider'], function(Tree, TreeData) {
-            this.tree = new Tree(div);                
-            this.dp = new TreeData(["data1","data2"]);
+            this.tree = new Tree(div);
+
+            var root = { items: [ { name: "Solution1", isFolder:true, isOpen:true, children: ["ch1", "chi2"] }]}    
+            this.dp = new TreeData(root);
             this.tree.setDataProvider(this.dp);           
         });
     }

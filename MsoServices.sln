@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingDll", "LoadingDll\Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{10567F9A-B12B-44B2-BBA9-77D96EFF8933}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsoPlatform", "MsoPlatform\MsoPlatform.csproj", "{8D904739-0BD6-4049-A147-BB1C7925DF36}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,14 +41,6 @@ Global
 		{36D92622-F81A-43BB-AE16-CCDBE1AC307B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36D92622-F81A-43BB-AE16-CCDBE1AC307B}.Release|x86.ActiveCfg = Release|Any CPU
 		{36D92622-F81A-43BB-AE16-CCDBE1AC307B}.Release|x86.Build.0 = Release|Any CPU
-		{8D904739-0BD6-4049-A147-BB1C7925DF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D904739-0BD6-4049-A147-BB1C7925DF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D904739-0BD6-4049-A147-BB1C7925DF36}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8D904739-0BD6-4049-A147-BB1C7925DF36}.Debug|x86.Build.0 = Debug|Any CPU
-		{8D904739-0BD6-4049-A147-BB1C7925DF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D904739-0BD6-4049-A147-BB1C7925DF36}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D904739-0BD6-4049-A147-BB1C7925DF36}.Release|x86.ActiveCfg = Release|Any CPU
-		{8D904739-0BD6-4049-A147-BB1C7925DF36}.Release|x86.Build.0 = Release|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAF82BFE-45CC-46C5-9690-0A0339970695}.Debug|x86.ActiveCfg = Debug|Any CPU
