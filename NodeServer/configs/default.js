@@ -9,5 +9,5 @@ module.exports = [{
     prefix: "/"
 }, {
     packagePath: "../plugins/server",
-    dllPath: Path.join(__dirname, "../../Mso.SignalR/bin/Debug/Mso.Signal.dll")
+    dllPath: Path.join(__dirname, "../../Mso.SignalR/bin/Debug/Mso.SignalR.dll")
 }];

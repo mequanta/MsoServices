@@ -18,7 +18,8 @@ require.config({
     },
     map: {
         '*': {
-            'css': 'require-css/css'
+            'css': 'require-css/css',
+            'less': 'require-less/less'
         }
     },
     waitSeconds: 30
@@ -26,9 +27,6 @@ require.config({
 
         require(["/signalr/hubs"], function() {
         });
-
-require(["css!solution/style"], function() {
-});
 
 require(["extjs", "ace/ace"], function() {
     require(["extjs-theme-crisp", "highstock"], function() {

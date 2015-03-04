@@ -6,8 +6,8 @@ namespace Mso.SignalR.Hubs
     {
         static DummyHub()
         {
-            MonoDevelopHub.Init();
-            SmartQuantHub.Init();
+//            MonoDevelopHub.Init();
+//            SmartQuantHub.Init();
         }
 
         public void Say(string message)

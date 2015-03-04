@@ -60,11 +60,7 @@
     <Compile Include="IService.cs" />
     <Compile Include="Data\Instrument.cs" />
     <Compile Include="WebStartup.cs" />
-    <Compile Include="Hubs\SmartQuantHub.cs" />
     <Compile Include="Hubs\DummyHub.cs" />
-    <Compile Include="Hubs\MonoDevelopHub.cs" />
-    <Compile Include="MonoDevelopExtensions.cs" />
-    <Compile Include="SmartQuantExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -72,7 +68,7 @@
     <Folder Include="Hubs\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="app.config" />
   </ItemGroup>
 </Project>

@@ -7,6 +7,7 @@ Ext.define("Ext.ux.AceTree", {
         var me = this;
         me.callParent(arguments);
         var div = me.body.dom;
+       // div.className = "";
         require(['ace_tree/tree', 'solution/DataProvider'], function(Tree, TreeData) {
             this.tree = new Tree(div);
 

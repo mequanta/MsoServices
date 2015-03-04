@@ -12,10 +12,13 @@ define(function(require, exports, module) {
             get: function() { return this.visibleItems.length; }
         });
     }
-    
+
     oop.inherits(DataProvider, BaseClass);
     (function() {
         
     }).call(DataProvider.prototype);
+
+    require(["less!./style"], function() {
+    });
     return DataProvider;
 });

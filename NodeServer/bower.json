@@ -19,7 +19,8 @@
     "engine.io": "~1.5.1",
     "requirejs": "~2.1.16",
     "ace_tree": "javagg/bower-ace_tree",
-    "require-css": "~0.1.8"
+    "require-css": "~0.1.8",
+    "require-less": "~0.1.5"
   },
   "exportsOverride": {
     "bootstrap": {
