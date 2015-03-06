@@ -15,13 +15,19 @@ namespace Mso.SignalR.Hubs
     {
         static MonoDevelopHub()
         {
-            Runtime.Initialize (true);
-            foreach (var binding in LanguageBindingService.LanguageBindings)
-                LoggingService.LogInfo ("Loaded Language Binding: {0}", binding.Language);
+        //    Console.WriteLine(System.IO.Directory.GetCurrentDirectory());
+            Runtime.Initialize(true);
+//            foreach (var binding in LanguageBindingService.LanguageBindings)
+//                LoggingService.LogInfo("Loaded Language Binding: {0}", binding.Language);
         }
 
         public static void Init()
         {
+        }
+
+        public string GetSolutionInDirectory(string workspaceDir)
+        {
+            return "{ \"items\":[{\"label\":\"solution\", \"isFolder\":true, \"items\":[\"sub1\",\"sub2\"]}] }";
         }
 
         public string GetSolutionItems(string workspaceDir)
@@ -100,7 +106,7 @@ namespace Mso.SignalR.Hubs
 
         private string GetSolutionAsJson(Solution solution)
         {
-            return solution.AsJson();
+            return "{}";//solution.AsJson();
         }
     }
 }
