@@ -36,9 +36,18 @@ namespace MonoDevelop.Projects
                 Console.WriteLine(item.Name);
             foreach (var item in solution.RootFolder.Files)
                 Console.WriteLine(item.FullPath);
-            return "{}";
+            return "{\"label\":\"solution\", \"isFolder\":true, \"items\":[\"sub1\",\"sub2\"]}";
         }
 
+        public static Mso.SignalR.Data.Solution ToMsoObject(this Solution solution)
+        {
+            return new Mso.SignalR.Data.Solution()
+            {
+                Name = solution.Name
+            };
+     
+        }
+            
         public static string AsJson(this SolutionItem item)
         {
             if (item is Project)

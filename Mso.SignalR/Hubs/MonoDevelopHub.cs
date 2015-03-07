@@ -8,6 +8,8 @@ using MonoDevelop.Core.ProgressMonitoring;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace Mso.SignalR.Hubs
 {
@@ -15,7 +17,7 @@ namespace Mso.SignalR.Hubs
     {
         static MonoDevelopHub()
         {
-        //    Console.WriteLine(System.IO.Directory.GetCurrentDirectory());
+            //    Console.WriteLine(System.IO.Directory.GetCurrentDirectory());
             Runtime.Initialize(true);
 //            foreach (var binding in LanguageBindingService.LanguageBindings)
 //                LoggingService.LogInfo("Loaded Language Binding: {0}", binding.Language);
@@ -27,16 +29,9 @@ namespace Mso.SignalR.Hubs
 
         public string GetSolutionInDirectory(string workspaceDir)
         {
-            return "{ \"items\":[{\"label\":\"solution\", \"isFolder\":true, \"items\":[\"sub1\",\"sub2\"]}] }";
-        }
-
-        public string GetSolutionItems(string workspaceDir)
-        {
             var slnFile = Directory.GetFiles(workspaceDir, "*.sln", SearchOption.TopDirectoryOnly).FirstOrDefault();
             var solution = Services.ProjectService.ReadWorkspaceItem(new NullProgressMonitor(), slnFile).GetAllSolutions().First();
-            if (solution != null)
-                return GetSolutionAsJson(solution);
-            return "{}";
+            return string.Format("{{\"items\":[{0}]}}", solution != null ? JsonConvert.SerializeObject(solution.ToMsoObject(), new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() }) : "");
         }
 
         public async Task ClearWorkspace()
@@ -106,7 +101,7 @@ namespace Mso.SignalR.Hubs
 
         private string GetSolutionAsJson(Solution solution)
         {
-            return "{}";//solution.AsJson();
+            return solution.AsJson();
         }
     }
 }

@@ -9,7 +9,7 @@
         var md = $.connection.monoDevelopHub
         md.client.sayBack = function(msg) { console.log(msg); };
         $.connection.hub.start().done(function() { 
-            md.server.getSolutionInDirectory("hello").done(function(message) {
+            md.server.getSolutionInDirectory("/home/alex/works/MsoNugetPackage").done(function(message) {
                console.log(message);            
               }
             )
