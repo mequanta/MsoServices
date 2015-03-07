@@ -152,6 +152,7 @@
     <Compile Include="MonoDevelopExtensions.cs" />
     <Compile Include="SmartQuantExtensions.cs" />
     <Compile Include="Hubs\RoslynHub.cs" />
+    <Compile Include="Hubs\SmartQuantHub.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

@@ -17,14 +17,7 @@ namespace Mso.SignalR.Hubs
     {
         static MonoDevelopHub()
         {
-            //    Console.WriteLine(System.IO.Directory.GetCurrentDirectory());
             Runtime.Initialize(true);
-//            foreach (var binding in LanguageBindingService.LanguageBindings)
-//                LoggingService.LogInfo("Loaded Language Binding: {0}", binding.Language);
-        }
-
-        public static void Init()
-        {
         }
 
         public string GetSolutionInDirectory(string workspaceDir)

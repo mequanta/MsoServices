@@ -13,8 +13,9 @@ namespace Mso.SignalR.Hubs
             var name = Framework.Current.Name;
         }
 
-        public static void Init()
+        public void Start()
         {
+            Console.WriteLine("started");
         }
 
         public async Task<IEnumerable<Mso.SignalR.Data.Provider>> GetProviders()
