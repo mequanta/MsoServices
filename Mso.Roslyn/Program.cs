@@ -2,6 +2,7 @@
 using Microsoft.CodeAnalysis.MSBuild;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 
 namespace Mso.Roslyn
 {
@@ -9,8 +10,9 @@ namespace Mso.Roslyn
     {
         public static void Main(string[] args)
         {
-            GetSolutionInDirectory("/home/alex/SampleProjects");
-            Console.WriteLine("Hello World!");
+            var path = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "..", "..", ".."));
+            Console.WriteLine(path);
+            GetSolutionInDirectory(path);
         }
 
         public static string GetSolutionInDirectory(string workspaceDir)
@@ -19,7 +21,23 @@ namespace Mso.Roslyn
             Console.WriteLine(slnFile);
             var ws = MSBuildWorkspace.Create();
             var solution = ws.OpenSolutionAsync(slnFile).Result;
-            Console.WriteLine(solution.FilePath);
+            foreach (var p in solution.Projects)
+            {
+                Console.WriteLine(p.Name);
+                foreach (var r in p.ProjectReferences)
+                {
+                    Console.WriteLine(r.ProjectId);
+                }
+                foreach (var r in p.MetadataReferences)
+                {
+                    Console.WriteLine(r.Display);
+                }
+                foreach (var d in p.Documents)
+                {
+                    Console.WriteLine(d.FilePath);
+                }
+            }
+            //Console.WriteLine(solution.FilePath);
             return "{}";
         }
     }
