@@ -3,6 +3,7 @@ using System.Linq;
 using MonoDevelop.Core;
 using MonoDevelop.Core.ProgressMonitoring;
 using MonoDevelop.Projects;
+
 //using SmartQuant;
 using System.IO;
 using System.Xml;
@@ -10,16 +11,21 @@ using System.Reflection;
 
 namespace LoadingDll
 {
-	class MainClass
-	{
-		public static void Main (string[] args)
+    class MainClass
+    {
+        public static void Main(string[] args)
         {
 //            LoadSmartQuant();
-            Runtime.Initialize (true);
-			foreach (var binding in LanguageBindingService.LanguageBindings)
-				LoggingService.LogInfo ("Loaded Language Binding: {0}", binding.Language);
-            Console.WriteLine("Hello, World");
+            Runtime.Initialize(true);
+//			foreach (var binding in LanguageBindingService.LanguageBindings)
+//				LoggingService.LogInfo ("Loaded Language Binding: {0}", binding.Language);
+//            Console.WriteLine("Hello, World");
 
+            var s = CreateSolution("", "fss");
+            //   Console.WriteLine(s.RootFolder.BaseDirectory);
+            var p = createProject(s, "ddd");
+            
+            Console.WriteLine(p.BaseDirectory);
 //            var basePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "../../../SampleProjects");
 //            Console.WriteLine(basePath);
 //            var service = Services.ProjectService;
@@ -41,26 +47,35 @@ namespace LoadingDll
 //            DumpProject(prj);
         }
 
-//        private static void LoadSmartQuant()
-//        {
-//            var config = Configuration.DefaultConfiguaration();
-//            Console.WriteLine(config);
-//            var f = Framework.Current;
-//           // Console.WriteLine(f.Configuration.ProviderManagerFileName);
-//          //  f.InstrumentManager.Add(new Instrument(InstrumentType.Synthetic, "hell"));
-//         //   f.InstrumentManager.Add(new Instrument(InstrumentType.Synthetic, "hell"));
-//            f.InstrumentManager.Dump();
-//            f.InstrumentServer.Save(new Instrument(InstrumentType.Synthetic, "hell"));
-//          
-//            f.InstrumentServer.Close();
-//            f.InstrumentManager.Dump();
-////            f.Clear();
-////            Console.WriteLine(Installation.ConfigDir);
-////            foreach (var instrument in f.InstrumentManager.Instruments)
-////                Console.WriteLine(instrument.Symbol);
-////            f.InstrumentManager.Dump();
-////            f.DataManager.Dump();
-//        }
+        public static Solution CreateSolution(string dir, string name)
+        {
+            var solution = new Solution();
+            var slnFile = Path.Combine(dir, string.Format("{0}.sln", name));
+            solution.SetLocation(Path.GetDirectoryName(slnFile), Path.GetFileNameWithoutExtension(slnFile));
+            solution.CreateDefaultConfigurations();
+            solution.Save(new NullProgressMonitor());
+            return solution;
+        }
+        //        private static void LoadSmartQuant()
+        //        {
+        //            var config = Configuration.DefaultConfiguaration();
+        //            Console.WriteLine(config);
+        //            var f = Framework.Current;
+        //           // Console.WriteLine(f.Configuration.ProviderManagerFileName);
+        //          //  f.InstrumentManager.Add(new Instrument(InstrumentType.Synthetic, "hell"));
+        //         //   f.InstrumentManager.Add(new Instrument(InstrumentType.Synthetic, "hell"));
+        //            f.InstrumentManager.Dump();
+        //            f.InstrumentServer.Save(new Instrument(InstrumentType.Synthetic, "hell"));
+        //
+        //            f.InstrumentServer.Close();
+        //            f.InstrumentManager.Dump();
+        ////            f.Clear();
+        ////            Console.WriteLine(Installation.ConfigDir);
+        ////            foreach (var instrument in f.InstrumentManager.Instruments)
+        ////                Console.WriteLine(instrument.Symbol);
+        ////            f.InstrumentManager.Dump();
+        ////            f.DataManager.Dump();
+        //        }
 
         public static void DumpWorkspace(Workspace ws)
         {
@@ -78,7 +93,7 @@ namespace LoadingDll
 
         public static void DumpProject(Project project)
         {
-            Console.WriteLine("{0} {1}", project.Name,project.GetType());
+            Console.WriteLine("{0} {1}", project.Name, project.GetType());
             foreach (var item in project.Items)
             {
                 if (item is ProjectReference)
@@ -111,19 +126,19 @@ namespace LoadingDll
             solution.NameChanged += (sender, e) =>
             {
             };
-            solution.StartupItemChanged+= (sender, e) =>
+            solution.StartupItemChanged += (sender, e) =>
             {
             };
             solution.RootFolder.ItemAdded += (sender, e) =>
             {
             };
-            solution.RootFolder.ItemRemoved+= (sender, e) =>
+            solution.RootFolder.ItemRemoved += (sender, e) =>
             {
             };
-            solution.RootFolder.SolutionItemFileAdded+= (sender, e) =>
+            solution.RootFolder.SolutionItemFileAdded += (sender, e) =>
             {
             };
-            solution.RootFolder.SolutionItemFileRemoved+= (sender, e) =>
+            solution.RootFolder.SolutionItemFileRemoved += (sender, e) =>
             {
             };
         }
@@ -132,32 +147,43 @@ namespace LoadingDll
         {
             solution.RootFolder.AddItem(project, true);
         }
+
         public static void AddFolderToSolution(Solution solution)
         {
             var ce = new SolutionFolder();
             ce.Name = "New Folder";
             solution.RootFolder.Items.Add(ce);
         }
+
         public static void ReloadSolution(Solution solution)
         {
             solution.ParentWorkspace.ReloadItem(new NullProgressMonitor(), solution);
         }
 
-        public static Project createProject(string fileName)
+        public static Project createProject(Solution solution, string prjName)
         {
             var doc = new XmlDocument();
-            var projectOptions =doc.CreateElement("Project");
-            projectOptions.SetAttribute("language", "c#");
-            var pci = new ProjectCreateInformation();
-            pci.ProjectName = Path.GetFileNameWithoutExtension(fileName);
-            pci.ProjectBasePath=  Path.GetDirectoryName(fileName);
-            var project = Services.ProjectService.CreateProject("DotNet", pci, projectOptions); 
+            var projectOptions = doc.CreateElement("Project");
+            projectOptions.SetAttribute("language", "C#");
+            var pci = new ProjectCreateInformation()
+            {
+                ProjectName = prjName,
+                ProjectBasePath = solution.BaseDirectory
+            };
+
+            var project = Services.ProjectService.CreateProject("DotNet", pci, projectOptions);
+            project.BaseDirectory = Path.Combine(solution.BaseDirectory.FileNameWithoutExtension, prjName);
+            Directory.CreateDirectory(project.BaseDirectory);
+            project.FileName = Path.Combine(project.BaseDirectory.FullPath, prjName);
+            solution.RootFolder.AddItem(project, true);
+            project.Save(new NullProgressMonitor());
+            solution.Save(new NullProgressMonitor());
             return project;
         }
 
         public static void deleteProject(Solution solution, Project project)
         {
-           // solution.
+            // solution.
         }
 
         static void RenameSolution(SolutionEntityItem item, string newName)
@@ -177,5 +203,5 @@ namespace LoadingDll
         static void AddFilesToProject(Project project, string[] files, FilePath targetDirectory)
         {
         }
-	}
+    }
 }

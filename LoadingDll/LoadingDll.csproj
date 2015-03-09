@@ -123,9 +123,6 @@
     <Compile Include="Program.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="..\Mso.SignalR\MonoDevelopExtensions.cs">
-      <Link>MonoDevelopExtensions.cs</Link>
-    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

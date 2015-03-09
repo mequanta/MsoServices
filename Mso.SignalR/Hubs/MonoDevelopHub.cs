@@ -10,6 +10,7 @@ using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using System.Xml;
 
 namespace Mso.SignalR.Hubs
 {
@@ -27,11 +28,48 @@ namespace Mso.SignalR.Hubs
             return string.Format("{{\"items\":[{0}]}}", solution != null ? JsonConvert.SerializeObject(solution.ToMsoObject(), new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() }) : "");
         }
 
-//        public async Task ClearWorkspace()
-//        {
-//            throw new NotImplementedException();
-//        }
-//
+        private Solution CreateSolution(string dir, string name)
+        {
+            var solution = new Solution();
+            var slnFile = Path.Combine(dir, string.Format("{0}.sln", name));
+            solution.SetLocation (Path.GetDirectoryName (slnFile), Path.GetFileNameWithoutExtension (slnFile));
+            solution.CreateDefaultConfigurations ();
+            solution.Save (new NullProgressMonitor());
+            return solution;
+        }
+
+        public static Project createProject(Solution solution, string prjName)
+        {
+            var doc = new XmlDocument();
+            var projectOptions = doc.CreateElement("Project");
+            projectOptions.SetAttribute("language", "C#");
+            var pci = new ProjectCreateInformation()
+            {
+                ProjectName = prjName,
+                ProjectBasePath = solution.BaseDirectory
+            };
+
+            var project = Services.ProjectService.CreateProject("DotNet", pci, projectOptions);
+            project.BaseDirectory = Path.Combine(solution.BaseDirectory.FileNameWithoutExtension, prjName);
+            Directory.CreateDirectory(project.BaseDirectory);
+            project.FileName = Path.Combine(project.BaseDirectory.FullPath, prjName);
+            solution.RootFolder.AddItem(project, true);
+            project.Save(new NullProgressMonitor());
+            solution.Save(new NullProgressMonitor());
+            return project;
+        }
+
+        public static void AddProjectToSolution(Solution solution, Project project)
+        {
+            solution.RootFolder.AddItem(project, true);
+            solution.Save(new NullProgressMonitor());
+        }
+
+        public static void RemoveProjectFromSolution(Solution solution, Project project)
+        {
+            solution.RootFolder.Items.Remove(project);
+            solution.Save(new NullProgressMonitor());
+        }
 //        public async Task RenameSolutionAsync(string oldName, string newName)
 //        {
 //            throw new NotImplementedException();
