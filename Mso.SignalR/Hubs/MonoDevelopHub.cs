@@ -21,6 +21,10 @@ namespace Mso.SignalR.Hubs
             Runtime.Initialize(true);
         }
 
+        public string GetBackendInfo() {
+            return string.Format("MonoDevelop: {0}", MonoDevelop.Core.Runtime.Version);
+        }
+
         public string GetSolutionInDirectory(string workspaceDir)
         {
             var slnFile = Directory.GetFiles(workspaceDir, "*.sln", SearchOption.TopDirectoryOnly).FirstOrDefault();

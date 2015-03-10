@@ -18,8 +18,8 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
     <PlatformTarget>x64</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -140,14 +140,30 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="schemas\appconfig.xsd" />
-    <None Include="schemas\manifest.xsd" />
-    <None Include="schemas\MonoDevelopAddIn.xsd" />
-    <None Include="schemas\nant.xsd" />
-    <None Include="schemas\readme.txt" />
-    <None Include="schemas\W3C-License.html" />
-    <None Include="schemas\XMLSchema.xsd" />
-    <None Include="schemas\xslt.xsd" />
+    <None Include="schemas\appconfig.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="schemas\manifest.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="schemas\MonoDevelopAddIn.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="schemas\nant.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="schemas\readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="schemas\W3C-License.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="schemas\XMLSchema.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="schemas\xslt.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mso.SignalR.MonoDevelop\Mso.SignalR.MonoDevelop.csproj">

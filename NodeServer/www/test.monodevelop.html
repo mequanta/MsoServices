@@ -4,19 +4,17 @@
     <script src="/lib/jquery/jquery.js" type="text/javascript"></script>
     <script src="/lib/signalr/jquery.signalR.js" type="text/javascript"></script>
     <script src="/signalr/hubs" type="text/javascript"></script>
-<script type="text/javascript">
+    <script type="text/javascript">
     $(function () {
         var md = $.connection.monoDevelopHub
-        md.client.sayBack = function(msg) { console.log(msg); };
-        $.connection.hub.start().done(function() { 
-            md.server.getSolutionInDirectory("/home/alex/works/MsoNugetPackage").done(function(message) {
-               console.log(message);            
-              }
-            )
+        $.connection.hub.start().done(function() {
+            md.server.getBackendInfo().done(function(info) {
+               console.log(info);            
+            })
         });
     });
 
-</script> 
+    </script> 
 </head>
 <body>
 TestSignalR

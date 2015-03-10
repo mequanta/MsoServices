@@ -17,15 +17,15 @@ namespace LoadingDll
         {
 //            LoadSmartQuant();
             Runtime.Initialize(true);
-//			foreach (var binding in LanguageBindingService.LanguageBindings)
-//				LoggingService.LogInfo ("Loaded Language Binding: {0}", binding.Language);
-//            Console.WriteLine("Hello, World");
+			foreach (var binding in LanguageBindingService.LanguageBindings)
+				LoggingService.LogInfo ("Loaded Language Binding: {0}", binding.Language);
+            Console.WriteLine("Hello, World");
 
-            var s = CreateSolution("", "fss");
+        //    var s = CreateSolution("", "fss");
             //   Console.WriteLine(s.RootFolder.BaseDirectory);
-            var p = createProject(s, "ddd");
+        //    var p = createProject(s, "ddd");
             
-            Console.WriteLine(p.BaseDirectory);
+        //    Console.WriteLine(p.BaseDirectory);
 //            var basePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "../../../SampleProjects");
 //            Console.WriteLine(basePath);
 //            var service = Services.ProjectService;
