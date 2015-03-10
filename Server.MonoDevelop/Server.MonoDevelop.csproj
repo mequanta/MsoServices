@@ -7,14 +7,14 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>TestServer</RootNamespace>
     <AssemblyName>Server.MonoDevelop</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\MonoDevelop</OutputPath>
+    <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\MonoDevelop</OutputPath>
+    <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Externalconsole>true</Externalconsole>
@@ -34,14 +34,35 @@
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Diagnostics">
+      <HintPath>..\packages\Microsoft.Owin.Diagnostics.3.0.1\lib\net45\Microsoft.Owin.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Hosting">
+      <HintPath>..\packages\Microsoft.Owin.Hosting.3.0.1\lib\net45\Microsoft.Owin.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.HttpListener">
+      <HintPath>..\packages\Microsoft.Owin.Host.HttpListener.3.0.1\lib\net45\Microsoft.Owin.Host.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.NRefactory.CSharp">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.CSharp.Refactoring">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.CSharp.Refactoring.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory.IKVM">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.IKVM.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.Xml">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.Xml.dll</HintPath>
     </Reference>
     <Reference Include="IKVM.Reflection">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\IKVM.Reflection.dll</HintPath>
@@ -64,29 +85,14 @@
     <Reference Include="Mono.Cecil.Mdb">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Debugging">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Debugging.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.TextEditor">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.TextEditor.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Core">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoDevelop.Ide">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Ide.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoDevelop.Projects.Formats.MSBuild">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Projects.Formats.MSBuild.dll</HintPath>
-    </Reference>
-    <Reference Include="Xwt">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Xwt.dll</HintPath>
-    </Reference>
-    <Reference Include="Xwt.Gtk">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Xwt.Gtk.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory.CSharp.Refactoring">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.CSharp.Refactoring.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory.Xml">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.Xml.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.CSharpBinding.AspNet">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.CSharpBinding.AspNet.dll</HintPath>
@@ -97,17 +103,17 @@
     <Reference Include="MonoDevelop.CSharpBinding">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.CSharpBinding.dll</HintPath>
     </Reference>
-    <Reference Include="MonoDevelop.VBNetBinding">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.VBNetBinding.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Debugging">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Debugging.dll</HintPath>
-    </Reference>
     <Reference Include="MonoDevelop.Debugger">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Debugger.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.DesignerSupport">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.DesignerSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Ide">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Ide.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Projects.Formats.MSBuild">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Projects.Formats.MSBuild.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Refactoring">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Refactoring.dll</HintPath>
@@ -115,64 +121,43 @@
     <Reference Include="MonoDevelop.SourceEditor2">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.SourceEditor2.dll</HintPath>
     </Reference>
+    <Reference Include="MonoDevelop.VBNetBinding">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.VBNetBinding.dll</HintPath>
+    </Reference>
     <Reference Include="MonoDevelop.Xml">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Xml.dll</HintPath>
     </Reference>
     <Reference Include="MsoPlatform">
       <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MsoPlatform.dll</HintPath>
     </Reference>
-    <Reference Include="SmartQuant">
-      <HintPath>..\packages\Mso.SmartQuant.Origin.0.1.0\lib\net45\SmartQuant.dll</HintPath>
+    <Reference Include="Xwt">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Xwt.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Xwt.Gtk">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Xwt.Gtk.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin">
-      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Diagnostics">
-      <HintPath>..\packages\Microsoft.Owin.Diagnostics.3.0.1\lib\net45\Microsoft.Owin.Diagnostics.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Hosting">
-      <HintPath>..\packages\Microsoft.Owin.Hosting.3.0.1\lib\net45\Microsoft.Owin.Hosting.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Owin.Host.HttpListener">
-      <HintPath>..\packages\Microsoft.Owin.Host.HttpListener.3.0.1\lib\net45\Microsoft.Owin.Host.HttpListener.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="schemas\appconfig.xsd" />
-    <None Include="schemas\manifest.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\MonoDevelopAddIn.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\nant.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\readme.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\W3C-License.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\XMLSchema.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\xslt.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="schemas\manifest.xsd" />
+    <None Include="schemas\MonoDevelopAddIn.xsd" />
+    <None Include="schemas\nant.xsd" />
+    <None Include="schemas\readme.txt" />
+    <None Include="schemas\W3C-License.html" />
+    <None Include="schemas\XMLSchema.xsd" />
+    <None Include="schemas\xslt.xsd" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mso.SignalR\Mso.SignalR.csproj">
-      <Project>{AAF82BFE-45CC-46C5-9690-0A0339970695}</Project>
-      <Name>Mso.SignalR</Name>
+    <ProjectReference Include="..\Mso.SignalR.MonoDevelop\Mso.SignalR.MonoDevelop.csproj">
+      <Project>{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}</Project>
+      <Name>Mso.SignalR.MonoDevelop</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Server\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
   </ItemGroup>
 </Project>

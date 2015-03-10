@@ -2,6 +2,7 @@
 using Owin;
 using Microsoft.AspNet.SignalR;
 using System.Collections.Generic;
+using Microsoft.Owin;
 
 namespace Mso.SignalR
 {

@@ -1,3 +1,6 @@
 node_modules/
+!node_modules/architect/
+!node_modules/connect-architect/
+!node_modules/frontdoor/
 bower_components/
 .idea/

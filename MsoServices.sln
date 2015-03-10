@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR", "Mso.SignalR\Mso.SignalR.csproj", "{AAF82BFE-45CC-46C5-9690-0A0339970695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.MonoDevelop", "TestServer\Server.MonoDevelop.csproj", "{36D92622-F81A-43BB-AE16-CCDBE1AC307B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingDll", "LoadingDll\LoadingDll.csproj", "{0C9191A5-24F4-4144-A3B2-0723968E0EDC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartQuant", "..\smartquant.dll\src\SmartQuant\SmartQuant.csproj", "{4A09B376-7AFA-40CE-AFBD-448984BC4514}"
@@ -13,13 +11,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.Roslyn", "Mso.Roslyn\Ms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQDemo", "SQDemo\SQDemo.csproj", "{BD1E0468-2355-4671-AFCF-BE150FA9A091}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.SmartQuant.Clone", "TestServer\Server.SmartQuant.Clone.csproj", "{83A9465F-4821-4D85-88E0-0AA573AA9912}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.MonoDevelop", "Mso.SignalR.MonoDevelop\Mso.SignalR.MonoDevelop.csproj", "{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.SmartQuant.Origin", "TestServer\Server.SmartQuant.Origin.csproj", "{5E472029-93FB-4C61-BB46-AE8975A1C36A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.SmartQuant.Clone", "Mso.SignalR.SmartQuant.Clone\Mso.SignalR.SmartQuant.Clone.csproj", "{E0CDA07A-3E27-489B-B1CE-51268852D1A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.SmartQuant.Clone", "Mso.SignalR\Mso.SignalR.SmartQuant.Clone.csproj", "{E0CDA07A-3E27-489B-B1CE-51268852D1A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.SmartQuant.Origin", "Mso.SignalR.SmartQuant.Origin\Mso.SignalR.SmartQuant.Origin.csproj", "{A6E3BC40-1E62-4E40-B44A-C84E7857BBBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mso.SignalR.SmartQuant.Origin", "Mso.SignalR\Mso.SignalR.SmartQuant.Origin.csproj", "{A6E3BC40-1E62-4E40-B44A-C84E7857BBBC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.MonoDevelop", "Server.MonoDevelop\Server.MonoDevelop.csproj", "{36D92622-F81A-43BB-AE16-CCDBE1AC307B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.SmartQuant.Clone", "Server.SmartQuant.Clone\Server.SmartQuant.Clone.csproj", "{83A9465F-4821-4D85-88E0-0AA573AA9912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.SmartQuant.Origin", "Server.SmartQuant.Origin\Server.SmartQuant.Origin.csproj", "{5E472029-93FB-4C61-BB46-AE8975A1C36A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,14 @@ Global
 		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Release|x86.ActiveCfg = Release|Any CPU
 		{BD1E0468-2355-4671-AFCF-BE150FA9A091}.Release|x86.Build.0 = Release|Any CPU
+		{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}.Debug|x86.Build.0 = Debug|Any CPU
+		{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}.Release|x86.ActiveCfg = Release|Any CPU
+		{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}.Release|x86.Build.0 = Release|Any CPU
 		{E0CDA07A-3E27-489B-B1CE-51268852D1A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E0CDA07A-3E27-489B-B1CE-51268852D1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0CDA07A-3E27-489B-B1CE-51268852D1A4}.Debug|x86.ActiveCfg = Debug|Any CPU
