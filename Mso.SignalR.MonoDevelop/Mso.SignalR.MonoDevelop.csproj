@@ -55,91 +55,91 @@
       <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.0\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory.CSharp">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.NRefactory.IKVM">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.IKVM.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.Reflection">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\IKVM.Reflection.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Addins.CecilReflector">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Addins.CecilReflector.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Addins">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Addins.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Addins.Gui">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Addins.Gui.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Addins.Setup">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Addins.Setup.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Cecil.Mdb">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Cecil.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.TextEditor">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.TextEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoDevelop.Core">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoDevelop.Ide">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Ide.dll</HintPath>
-    </Reference>
-    <Reference Include="MonoDevelop.Projects.Formats.MSBuild">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Projects.Formats.MSBuild.dll</HintPath>
-    </Reference>
-    <Reference Include="Xwt">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Xwt.dll</HintPath>
-    </Reference>
-    <Reference Include="Xwt.Gtk">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Xwt.Gtk.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\ICSharpCode.NRefactory.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory.CSharp.Refactoring">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.CSharp.Refactoring.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\ICSharpCode.NRefactory.CSharp.Refactoring.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.IKVM">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\ICSharpCode.NRefactory.IKVM.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory.Xml">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\ICSharpCode.NRefactory.Xml.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\ICSharpCode.NRefactory.Xml.dll</HintPath>
     </Reference>
-    <Reference Include="MonoDevelop.CSharpBinding.AspNet">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.CSharpBinding.AspNet.dll</HintPath>
+    <Reference Include="IKVM.Reflection">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\IKVM.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="MonoDevelop.CSharpBinding.Autotools">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.CSharpBinding.Autotools.dll</HintPath>
+    <Reference Include="Mono.Addins.CecilReflector">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Mono.Addins.CecilReflector.dll</HintPath>
     </Reference>
-    <Reference Include="MonoDevelop.CSharpBinding">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.CSharpBinding.dll</HintPath>
+    <Reference Include="Mono.Addins">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Mono.Addins.dll</HintPath>
     </Reference>
-    <Reference Include="MonoDevelop.VBNetBinding">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.VBNetBinding.dll</HintPath>
+    <Reference Include="Mono.Addins.Gui">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Mono.Addins.Gui.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Addins.Setup">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Mono.Addins.Setup.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Mono.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Debugging">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\Mono.Debugging.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Mono.Debugging.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.TextEditor">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Mono.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Core">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.CSharpBinding.AspNet">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.CSharpBinding.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.CSharpBinding.Autotools">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.CSharpBinding.Autotools.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.CSharpBinding">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.CSharpBinding.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Debugger">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Debugger.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.Debugger.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.DesignerSupport">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.DesignerSupport.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.DesignerSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Ide">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.Ide.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Projects.Formats.MSBuild">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.Projects.Formats.MSBuild.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Refactoring">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Refactoring.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.Refactoring.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.SourceEditor2">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.SourceEditor2.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.SourceEditor2.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.VBNetBinding">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.VBNetBinding.dll</HintPath>
     </Reference>
     <Reference Include="MonoDevelop.Xml">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MonoDevelop.Xml.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MonoDevelop.Xml.dll</HintPath>
     </Reference>
     <Reference Include="MsoPlatform">
-      <HintPath>..\packages\Mso.MonoDevelop.0.2.5\lib\net45\MsoPlatform.dll</HintPath>
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\MsoPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xwt">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Xwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Xwt.Gtk">
+      <HintPath>..\packages\Mso.MonoDevelop.0.2.6\lib\net45\Xwt.Gtk.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -165,30 +165,14 @@
     <None Include="..\Mso.SignalR\app.config">
       <Link>app.config</Link>
     </None>
-    <None Include="schemas\appconfig.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\manifest.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\MonoDevelopAddIn.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\nant.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\readme.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\W3C-License.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\XMLSchema.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="schemas\xslt.xsd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="schemas\appconfig.xsd" />
+    <None Include="schemas\manifest.xsd" />
+    <None Include="schemas\MonoDevelopAddIn.xsd" />
+    <None Include="schemas\nant.xsd" />
+    <None Include="schemas\readme.txt" />
+    <None Include="schemas\W3C-License.html" />
+    <None Include="schemas\XMLSchema.xsd" />
+    <None Include="schemas\xslt.xsd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Hubs\" />
