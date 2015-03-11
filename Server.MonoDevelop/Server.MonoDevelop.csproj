@@ -150,14 +150,14 @@
     <None Include="schemas\xslt.xsd" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Server\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Mso.SignalR.MonoDevelop\Mso.SignalR.MonoDevelop.csproj">
       <Project>{C36B5330-39B2-4E8C-9925-1BD5C7B4FC94}</Project>
       <Name>Mso.SignalR.MonoDevelop</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\Server\Program.cs">
-      <Link>Program.cs</Link>
-    </Compile>
   </ItemGroup>
 </Project>
