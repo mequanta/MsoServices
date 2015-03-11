@@ -20,13 +20,19 @@
     "requirejs": "~2.1.16",
     "ace_tree": "javagg/bower-ace_tree",
     "require-css": "~0.1.8",
-    "require-less": "~0.1.5"
+    "require-less": "~0.1.5",
+    "jquery-ui": "~1.11.3",
+    "jquery-easyui-bower": "*"
   },
   "exportsOverride": {
-    "bootstrap": {
-      "js": "dist/js/*.*",
-      "css": "dist/css/*.*",
-      "fonts": "dist/fonts/*.*"
-    }
+    "jquery-ui": {
+      "js": "*.min.js",
+      "css/images": "themes/smoothness/images/*",
+      "css": "themes/smoothness/*.css"
+    },
+	"jquery-easyui-bower": {
+	  "js": "jquery.easyui.min.js",
+	  "css": "themes" 
+	}
   }
 }
