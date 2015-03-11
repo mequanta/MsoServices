@@ -17,8 +17,8 @@ namespace LoadingDll
         {
 //            LoadSmartQuant();
             Runtime.Initialize(true);
-//			foreach (var binding in LanguageBindingService.LanguageBindings)
-//				LoggingService.LogInfo ("Loaded Language Binding: {0}", binding.Language);
+			foreach (var binding in LanguageBindingService.LanguageBindings)
+				LoggingService.LogInfo ("Loaded Language Binding: {0}", binding.Language);
             Console.WriteLine("Hello, World");
 
         //    var s = CreateSolution("", "fss");

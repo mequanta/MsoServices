@@ -18,7 +18,7 @@ namespace Mso.SignalR.Hubs
     {
         static MonoDevelopHub()
         {
-            Runtime.Initialize(true);
+ //           Runtime.Initialize(true);
 //            foreach (var binding in LanguageBindingService.LanguageBindings)
 //                LoggingService.LogInfo ("Loaded Language Binding: {0}", binding.Language);
 
