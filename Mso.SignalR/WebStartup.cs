@@ -11,6 +11,13 @@ namespace Mso.SignalR
 {
     public class WebStartup
     {
+        private string wwwroot;
+
+        public WebStartup(string wwwroot = null)
+        {
+            this.wwwroot = wwwroot;
+        }
+
         public void Configuration(IAppBuilder app)
         {
             app.Properties["host.AppName"] = "Mso";
@@ -22,7 +29,7 @@ namespace Mso.SignalR
             app.UseFileServer(new FileServerOptions()
             {
                 RequestPath = PathString.Empty,
-                FileSystem = new PhysicalFileSystem("../../../NodeServer/www")
+                FileSystem = new PhysicalFileSystem(this.wwwroot ?? "../../../NodeServer/www")
             });
             app.UseWelcomePage();
         }

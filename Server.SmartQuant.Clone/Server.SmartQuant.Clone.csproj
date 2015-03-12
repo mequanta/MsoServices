@@ -64,5 +64,6 @@
     <Compile Include="..\Server\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
+    <Compile Include="Mono.Options\Options.cs" />
   </ItemGroup>
 </Project>

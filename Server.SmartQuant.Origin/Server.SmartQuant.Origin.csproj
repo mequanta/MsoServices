@@ -55,6 +55,7 @@
     <Compile Include="..\Server\Program.cs">
       <Link>Program.cs</Link>
     </Compile>
+    <Compile Include="Mono.Options\Options.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mso.SignalR.SmartQuant.Origin\Mso.SignalR.SmartQuant.Origin.csproj">
