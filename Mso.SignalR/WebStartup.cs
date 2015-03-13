@@ -1,11 +1,8 @@
-﻿using System;
-using Owin;
+﻿using Owin;
 using Microsoft.AspNet.SignalR;
 using Microsoft.Owin.StaticFiles;
 using Microsoft.Owin;
 using Microsoft.Owin.FileSystems;
-using System.Collections.Generic;
-using Microsoft.Owin.Diagnostics;
 
 namespace Mso.SignalR
 {
@@ -31,7 +28,6 @@ namespace Mso.SignalR
                 RequestPath = PathString.Empty,
                 FileSystem = new PhysicalFileSystem(this.wwwroot ?? "../../../NodeServer/www")
             });
-            app.UseWelcomePage();
         }
     }
 }
